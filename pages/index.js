@@ -10,8 +10,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className='styles.title'>Home page</h1>
+      <main className='container'>
+        <div className='row'>
+          <div className='col-12'>
+            <h1 className='styles.title'>Home page</h1>
+          </div>
+        </div>
       </main>
     </div>
   )
