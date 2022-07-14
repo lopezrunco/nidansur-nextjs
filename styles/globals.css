@@ -33,3 +33,29 @@ ul {
 section {
   padding: var(--section-padding);
 }
+
+/* Bootstrap navbar override styles */
+@media screen and (min-width:992px) {
+  .navbar-nav .nav-link {
+    color: var(--light-text) !important;
+
+  }
+
+  .nav-item {
+    margin: 0 .6rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .nav-item a {
+    padding: .7rem 0;
+  }
+
+  .active {
+    background-color: var(--primary-color);
+    background-image: url('/assets/arrow_menu.png');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+  }
+}

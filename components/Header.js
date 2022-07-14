@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { headerServices } from '../data'
 import styles from '../styles/Header.module.css'
 
@@ -8,11 +9,13 @@ const Header = () => {
             <div className='container'>
                 <div className='row align-items-center'>
                     <div className='col-md-3'>
-                        <Image
-                            src='/assets/nidansur-sa-maquinaria-vial-y-transporte-logo.png'
-                            width='157px'
-                            height='70px'
-                            alt='nidansur-sa-maquinaria-vial-y-transporte-logo' />
+                        <Link href='/'>
+                            <Image
+                                src='/assets/nidansur-sa-maquinaria-vial-y-transporte-logo.png'
+                                width='157px'
+                                height='70px'
+                                alt='nidansur-sa-maquinaria-vial-y-transporte-logo' />
+                        </Link>
                     </div>
                     {headerServices.map((el, idx) => (
                         <div className='col-md-3 d-none d-lg-block' key={idx}>

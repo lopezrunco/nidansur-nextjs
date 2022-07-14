@@ -1,11 +1,13 @@
-import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
-import { mainMenuLinks } from '../data'
+import { useRouter } from 'next/router'
+import styles from '../styles/Navbar.module.css'
 
 const Navbar = () => {
+    const router = useRouter()
+
     return (
-        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-            <div className='container'>
+        <nav className={`${styles.nav} navbar navbar-expand-lg navbar-dark p-lg-0`}>
+            <div className='container justify-content-end'>
                 <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                     <span className='navbar-toggler-icon'></span>
                 </button>
@@ -13,33 +15,33 @@ const Navbar = () => {
                     <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                         <li className='nav-item'>
                             <Link href='/'>
-                                <a className='nav-link active' aria-current='page'>Inicio</a>
+                                <a className={router.asPath == '/' ? 'nav-link active' : 'nav-link'} aria-current='page'>Inicio</a>
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link href='/nuestra-empresa'>
-                                <a className='nav-link'>Nuestra empresa</a>
+                                <a className={router.asPath == '/nuestra-empresa' ? 'nav-link active' : 'nav-link'} aria-current='page'>Nuestra empresa</a>
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link href='/servicios'>
-                                <a className='nav-link'>Servicios</a>
+                                <a className={router.asPath == '/servicios' ? 'nav-link active' : 'nav-link'} aria-current='page'>Servicios</a>
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link href='/equipamientos'>
-                                <a className='nav-link'>Equipamientos</a>
+                                <a className={router.asPath == '/equipamientos' ? 'nav-link active' : 'nav-link'} aria-current='page'>Equipamientos</a>
                             </Link>
                         </li>
                         <li className='nav-item'>
                             <Link href='/contacto'>
-                                <a className='nav-link'>Contacto</a>
+                                <a className={router.asPath == '/contacto' ? 'nav-link active' : 'nav-link'} aria-current='page'>Contacto</a>
                             </Link>
                         </li>
                     </ul>
-                    <form className='d-flex'>
+                    <form className='d-none d-lg-flex'>
                         <Link href='tel:+59899350967'>
-                            ¿Tiene una consulta? Llámenos al: 099 350 967
+                            <p className={styles.phoneContact}>¿Tiene una consulta? Llámenos al: <span>099 350 967</span></p>
                         </Link>
                     </form>
                 </div>

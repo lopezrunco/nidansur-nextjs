@@ -8,6 +8,10 @@
         text-align: left;
     }
 
+    .header img {
+        cursor: pointer;
+    }
+
     .header .item {
         display: flex;
         flex-direction: row;

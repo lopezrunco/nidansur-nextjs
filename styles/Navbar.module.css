@@ -1,0 +1,15 @@
+nav.nav {
+    background-color: var(--dark-bg);
+}
+
+.phoneContact {
+    margin-bottom: 0;
+    color: var(--light-text);
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.phoneContact span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
