@@ -1,0 +1,34 @@
+.header {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        text-align: left;
+    }
+
+    .header .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header .item i {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .header .item h6 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+
+    .header .item p {
+        margin-bottom: 0;
+        font-size: .7rem;
+    }
+}

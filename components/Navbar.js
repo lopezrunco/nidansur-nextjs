@@ -1,5 +1,6 @@
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
+import { mainMenuLinks } from '../data'
 
 const Navbar = () => {
     return (

@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.css'
-
 import Layout from '../components/Layout'
 import '../styles/globals.css'
+import '../styles/variables.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

@@ -1,0 +1,17 @@
+:root {
+    --primary-font: 'Open Sans', sans-serif;
+    --primary-color: #db2e27;
+    --secondary-color: #280a8b;
+    --color-text: #2d2d2d;
+    --light-text: #ffffff;
+    --light-bg: #ffffff;
+    --medium-light-bg: #dddddd;
+    --dark-bg: #191919;
+    --footer-bg: #191919;
+    --selection-color: #dddddd;
+    --box-shadow: 5px 5px 10px #0000002e;
+    --main-transition: all ease-in-out .2s;
+    --standard-border-radius: 0;
+    --border-color: #cccccc;
+    --section-padding: 2rem 0;
+}

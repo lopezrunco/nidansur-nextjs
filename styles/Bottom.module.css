@@ -1,0 +1,44 @@
+.bottom {
+    background-color: var(--medium-light-bg);
+    font-size: .75rem;
+}
+
+.bottom h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bottom h6::before {
+    content: '';
+    width: 1.3rem;
+    height: 0.7rem;
+    margin-right: .3rem;
+    background: var(--primary-color);
+    display: inline-block;
+}
+
+.bottom .contactInfo p:last-child {
+    margin-bottom: 0;
+}
+
+.bottom .contactInfo p i {
+    margin-right: .3rem;
+}
+
+.bottom ul {
+    padding: 0%;
+}
+
+.bottom ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .bottom {
+        font-size: .85rem;
+    }
+
+    .bottom img {
+        cursor: pointer;
+    }
+}
