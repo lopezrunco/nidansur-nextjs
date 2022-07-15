@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HomeSlider from '../components/HomeSlider'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,12 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='container'>
-        <div className='row'>
-          <div className='col-12'>
-            <h1 className='styles.title'>Home page</h1>
-          </div>
-        </div>
+      <main>
+        <HomeSlider />
       </main>
     </div>
   )
