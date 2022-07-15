@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Equipment from '../components/Equipment'
 import HomeSlider from '../components/HomeSlider'
 import ServicesHome from '../components/ServicesHome'
 import styles from '../styles/Home.module.css'
@@ -15,6 +16,9 @@ export default function Home() {
       <main>
         <HomeSlider />
         <ServicesHome />
+        <section className='container-fluid p-0'>
+          <Equipment />
+        </section>
       </main>
     </div>
   )

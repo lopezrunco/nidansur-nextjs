@@ -1,0 +1,88 @@
+.equipmentGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 250px);
+}
+
+.equipmentGrid .item {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.equipmentGrid .item .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.equipmentGrid .item:nth-child(1) .image {
+    background-image: url('../public/assets/nidansur-sa-nuestros-equipos-maquinaria-vial-transporte-florida-durazno-uruguay-1.jpg');
+}
+
+.equipmentGrid .item:nth-child(2) .image {
+    background-image: url('../public/assets/nidansur-sa-nuestros-equipos-maquinaria-vial-transporte-florida-durazno-uruguay-2.jpg');
+}
+
+.equipmentGrid .item:nth-child(3) .image {
+    background-image: url('../public/assets/nidansur-sa-nuestros-equipos-maquinaria-vial-transporte-florida-durazno-uruguay-3.jpg');
+}
+
+.equipmentGrid .item:nth-child(4) .image {
+    background-image: url('../public/assets/nidansur-sa-nuestros-equipos-maquinaria-vial-transporte-florida-durazno-uruguay-4.jpg');
+}
+
+.equipmentGrid .item .title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000082;
+}
+
+.equipmentGrid .item .title p {
+    padding: 2rem;
+    color: var(--light-text);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .equipmentGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 250px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .equipmentGrid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 250px);
+    }
+
+    .equipmentGrid .item .title {
+        border: 7px solid var(--primary-color);
+        opacity: 0;
+        transition: var(--main-transition);
+    }
+
+    .equipmentGrid .item:hover .title,
+    .equipmentGrid .item:active .title {
+        opacity: 1;
+    }
+
+    .equipmentGrid .item:hover .image,
+    .equipmentGrid .item:active .image {
+        transform: scale(1.3);
+
+    }
+}
