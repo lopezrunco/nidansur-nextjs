@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import HomeSlider from '../components/HomeSlider'
+import ServicesHome from '../components/ServicesHome'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main>
         <HomeSlider />
+        <ServicesHome />
       </main>
     </div>
   )

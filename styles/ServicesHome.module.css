@@ -1,0 +1,41 @@
+.servicesGrid .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.servicesGrid .item .icon {
+    border: 1px solid var(--border-color);
+    min-width: 4rem;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .5s;
+}
+
+.servicesGrid .item .icon:hover,
+.servicesGrid .item .icon:active {
+    border-radius: 50%;
+    border-color: var(--color-tex);
+}
+
+.servicesGrid .item .icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.servicesGrid .item h6 {
+    margin-bottom: 0;
+    font-weight: 700;
+    transition: var(--main-transition);
+}
+
+.servicesGrid .item h6:hover,
+.servicesGrid .item h6:hover {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--primary-color);
+}
