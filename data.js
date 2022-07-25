@@ -19,3 +19,9 @@ export const equipment = [
     { id: 3, title: 'Excavadora JCB JS130', imgSrc: 'nidansur-sa-nuestros-equipos-maquinaria-vial-transporte-florida-durazno-uruguay-3.jpg' },
     { id: 4, title: 'Camión Mercedes 1630', imgSrc: 'nidansur-sa-nuestros-equipos-maquinaria-vial-transporte-florida-durazno-uruguay-4.jpg' }
 ]
+
+export const aboutUsImages = [
+    'nosotros-nidansur-servicios-viales-transporte-1.jpg',
+    'nosotros-nidansur-servicios-viales-transporte-2.jpg',
+    'nosotros-nidansur-servicios-viales-transporte-3.jpg'
+]
