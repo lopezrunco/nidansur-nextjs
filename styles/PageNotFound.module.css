@@ -1,0 +1,36 @@
+.pageNotFound h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pageNotFound h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pageNotFound ul li {
+    margin-bottom: .5rem;
+}
+
+.pageNotFound ul li i {
+    margin-right: .5rem;
+    color: var(--primary-color);
+}
+
+.pageNotFound .backHomeBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
+    cursor: pointer;
+}
+
+.pageNotFound .backHomeBtn i {
+    color: var(--primary-color);
+}
