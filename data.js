@@ -25,3 +25,10 @@ export const aboutUsImages = [
     'nosotros-nidansur-servicios-viales-transporte-2.jpg',
     'nosotros-nidansur-servicios-viales-transporte-3.jpg'
 ]
+
+export const whyUsItems = [
+    {icon: 'fa-solid fa-handshake-simple', title: 'Responsabilidad y confianza', description: 'Nos compremetemos con el cliente a cumplir con los objetivos de la mejor forma posible para superar las expectativas.'},
+    {icon: 'fa-solid fa-arrows-rotate', title: 'Capacitación constante', description: 'Nuestro equipo de trabajo se mantiene en constante aprendizaje para cumplir con los requisitos que el rubro demanda.'},
+    {icon: 'fa-solid fa-users', title: 'Experiencia', description: 'Desde el inicio de nuestras actividades el el año 2005, hemos acumulado una valiosa experiencia que ponemos a su servicio.'},
+    {icon: 'fa-solid fa-hand-holding-dollar', title: 'Precios competitivos', description: 'Competimos en el mercado con la mejor relación de precio y calidad del trabajo.'}
+]

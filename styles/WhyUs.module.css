@@ -1,0 +1,52 @@
+.whyUsWrapper {
+    background-image: url('/assets/bg-porque-nosotros.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--light-text);
+    padding: var(--section-padding);
+}
+
+.whyUsWrapper .itemWrapper {
+    background-color: var(--light-bg);
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.whyUsWrapper .itemWrapper:hover {
+    background-color: var(--primary-color);
+}
+
+.whyUsWrapper .itemWrapper .contentWrapper {
+    margin: 3rem 2rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.whyUsWrapper .itemWrapper .contentWrapper .visibleContent {
+    height: 100%;
+    opacity: 1;
+}
+
+.whyUsWrapper .itemWrapper .contentWrapper .visibleContent i {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.whyUsWrapper .itemWrapper .contentWrapper:hover .visibleContent,
+.whyUsWrapper .itemWrapper .contentWrapper:active .visibleContent {
+    height: 0;
+    opacity: 0;
+}
+
+.whyUsWrapper .itemWrapper .contentWrapper .hiddenContent h5 b,
+.whyUsWrapper .itemWrapper .contentWrapper .hiddenContent p {
+    color: var(--light-text);
+}
+
+.whyUsWrapper .itemWrapper .contentWrapper .hiddenContent h5 {
+    text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+.title h3,
+.title b {
+    text-transform: uppercase;
+    color: var(--light-text);
+}
+
+.title .separator {
+    width: 3rem;
+    height: .2rem;
+    background-color: var(--primary-color);
+    margin: 1rem 0 3rem;
+}
