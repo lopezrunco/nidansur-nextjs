@@ -1,0 +1,114 @@
+.videoWrapper {
+    background-image: url('/assets/bg-equipos-trabajando.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.videoWrapper .iconWrapper {
+    display: none;
+}
+
+.videoWrapper .iconWrapper .iconFX .icon i,
+.videoWrapper h5 {
+    color: var(--light-text);
+    font-weight: 700;
+}
+
+.videoWrapper .iconWrapper .iconFX .icon i {
+    font-size: 2rem;
+}
+
+.videoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #000000e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.videoModal .closeIcon {
+    position: fixed;
+    bottom: 1rem;
+    font-size: 2rem;
+}
+
+.videoModal .closeIcon i {
+    color: var(--light-text);
+}
+
+.videoModal iframe {
+    width: 100%;
+    height: 10rem;
+}
+
+@media screen and (min-width: 420px) {
+    .videoModal iframe {
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .videoModal iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .videoWrapper .iconWrapper {
+        height: 8rem;
+        width: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videoWrapper .iconWrapper .iconFX {
+        background-color: #0000004f;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        animation: pulseBg 2s infinite;
+    }
+
+    .videoWrapper .iconWrapper .iconFX .icon {
+        background-color: #0000008f;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    @keyframes pulseBg {
+        0% {
+            background-color: #0000004f;
+            width: 5rem;
+            height: 5rem;
+        }
+
+        100% {
+            background-color: #00000000;
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+}

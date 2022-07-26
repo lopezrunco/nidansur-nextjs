@@ -29,8 +29,8 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link href='/equipamientos'>
-                                <a className={router.asPath == '/equipamientos' ? 'nav-link active' : 'nav-link'} aria-current='page'>Equipamientos</a>
+                            <Link href='/equipamiento'>
+                                <a className={router.asPath == '/equipamiento' ? 'nav-link active' : 'nav-link'} aria-current='page'>Equipamiento</a>
                             </Link>
                         </li>
                         <li className='nav-item'>
