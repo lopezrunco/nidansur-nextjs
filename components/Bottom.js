@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { contactInfo } from '../data'
 import styles from '../styles/Bottom.module.css'
 
 const Bottom = () => {
@@ -11,9 +12,14 @@ const Bottom = () => {
                         <h6>Nuestra empresa</h6>
                         <p>Confíe en NIDANSUR para sus necesidades de Transporte de carga y servicios de retroexcavadora.</p>
                         <div className={styles.contactInfo}>
-                            <p><i className="fa-solid fa-location-dot"></i> Lavalleja y Aristegui - Sarandí Grande, Florida - Uruguay</p>
-                            <p><i className="fa-solid fa-phone"></i> <a href='tel:+59899350967'>099 350 967</a></p>
-                            <p><i className="fa-solid fa-envelope"></i> <a href='mailto:nidansursa@vera.com.uy'>nidansursa@vera.com.uy</a></p>
+                            {contactInfo.map((el, idx) => {
+                                return (
+                                    <p key={idx}>
+                                        <i className={el.icon}></i>
+                                        <a href={el.link} target='_blank' rel='noreferrer'> {el.text}</a>
+                                    </p>
+                                )
+                            })}
                         </div>
                     </div>
                     <div className='col-md-3'>

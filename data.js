@@ -27,8 +27,14 @@ export const aboutUsImages = [
 ]
 
 export const whyUsItems = [
-    {icon: 'fa-solid fa-handshake-simple', title: 'Responsabilidad y confianza', description: 'Nos compremetemos con el cliente a cumplir con los objetivos de la mejor forma posible para superar las expectativas.'},
-    {icon: 'fa-solid fa-arrows-rotate', title: 'Capacitación constante', description: 'Nuestro equipo de trabajo se mantiene en constante aprendizaje para cumplir con los requisitos que el rubro demanda.'},
-    {icon: 'fa-solid fa-users', title: 'Experiencia', description: 'Desde el inicio de nuestras actividades el el año 2005, hemos acumulado una valiosa experiencia que ponemos a su servicio.'},
-    {icon: 'fa-solid fa-hand-holding-dollar', title: 'Precios competitivos', description: 'Competimos en el mercado con la mejor relación de precio y calidad del trabajo.'}
+    { icon: 'fa-solid fa-handshake-simple', title: 'Responsabilidad y confianza', description: 'Nos compremetemos con el cliente a cumplir con los objetivos de la mejor forma posible para superar las expectativas.' },
+    { icon: 'fa-solid fa-arrows-rotate', title: 'Capacitación constante', description: 'Nuestro equipo de trabajo se mantiene en constante aprendizaje para cumplir con los requisitos que el rubro demanda.' },
+    { icon: 'fa-solid fa-users', title: 'Experiencia', description: 'Desde el inicio de nuestras actividades el el año 2005, hemos acumulado una valiosa experiencia que ponemos a su servicio.' },
+    { icon: 'fa-solid fa-hand-holding-dollar', title: 'Precios competitivos', description: 'Competimos en el mercado con la mejor relación de precio y calidad del trabajo.' }
+]
+
+export const contactInfo = [
+    { icon: 'fa-solid fa-location-dot', link: 'https://goo.gl/maps/YLQJM5mBKajFgWXZA', text: 'Lavalleja y Aristegui - Sarandí Grande, Florida - Uruguay' },
+    { icon: 'fa-solid fa-phone', link: 'tel:+59899350967', text: '099 350 967' },
+    { icon: 'fa-solid fa-envelope', link: 'mailto:nidansursa@vera.com.uy', text: 'nidansursa@vera.com.uy' }
 ]
