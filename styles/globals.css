@@ -64,7 +64,6 @@ section {
 .carousel-caption {
   text-align: left;
   top: 0;
-  /* transform: translateY(-50%); */
   width: 40%;
 }
 
@@ -92,4 +91,25 @@ section {
   width: .8rem !important;
   height: .8rem !important;
   background-color: var(--primary-color) !important;
+}
+
+/* Bootstrap buttons override styles */
+.btn {
+  border-radius: .15rem;
+}
+
+.btn-primary {
+  background-color: var(--dark-bg);
+  border-color: var(--dark-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:disabled {
+  background-color: var(--medium-light-bg);
+  color: var(--color-text);
+  border-color: var(--border-color);
 }

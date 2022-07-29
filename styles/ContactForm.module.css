@@ -1,0 +1,43 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactForm label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-size: .7rem;
+}
+
+.contactForm label input,
+.contactForm label textarea {
+    padding: 0.3rem 0.7rem;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    font-size: 1rem;
+}
+
+.submitedMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.submitedMessage i {
+    font-size: 4rem;
+    color: var(--success-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .submitedMessage {
+        gap: 3rem;
+        padding: 3rem 0;
+    }
+}

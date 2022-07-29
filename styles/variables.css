@@ -2,6 +2,9 @@
     --primary-font: 'Open Sans', sans-serif;
     --primary-color: #db2e27;
     --secondary-color: #280a8b;
+    --success-color: #83ca81;
+    --warning-color: #f7b217;
+    --error-color: #f71608;
     --color-text: #2d2d2d;
     --light-text: #ffffff;
     --light-bg: #ffffff;

@@ -7,29 +7,32 @@ const ContactForm = () => {
     const [state, handleSubmit] = useForm(EMAIL_CODE)
     if (state.succeeded) {
         return (
-            <div>
-                <p>El mensaje fué enviado correctamente</p>
-                <p>Le responderemos en breve.</p>
+            <div className={styles.submitedMessage}>
+                <i className="fa-solid fa-envelope-open-text"></i>
+                <p>El mensaje fué enviado correctamente. <br />
+                    Le responderemos en breve.</p>
             </div>
         )
+    } else if (state.errors) {
+        console.log('Error: ', state.errors)
     }
 
     return (
-        <div className={styles.contactForm}>
+        <>
             <ArticleTitle title='Formulario de contacto' />
             <form className={styles.contactForm} onSubmit={handleSubmit}>
-                <label htmlFor='name'>Nombre *
+                <label htmlFor='nombre'>Nombre *
                     <input
-                        id="name"
+                        id="nombre"
                         type="text"
-                        name="name"
+                        name="nombre"
                         placeholder='Escriba su nombre aquí'
                         required
                     />
                 </label>
                 <ValidationError
-                    prefix="Name"
-                    field="name"
+                    prefix="Nombre"
+                    field="nombre"
                     errors={state.errors}
                 />
 
@@ -48,40 +51,42 @@ const ContactForm = () => {
                     errors={state.errors}
                 />
 
-                <label htmlFor='subject'>Asunto *
+                <label htmlFor='asunto'>Asunto *
                     <input
-                        id="subject"
+                        id="asunto"
                         type="text"
-                        name="subject"
+                        name="asunto"
                         placeholder='Asunto del mensaje'
                         required
                     />
                 </label>
                 <ValidationError
-                    prefix="Subject"
-                    field="subject"
+                    prefix="Asunto"
+                    field="asunto"
                     errors={state.errors}
                 />
 
-                <label htmlFor='message'> Mensaje *
+                <label htmlFor='mensaje'> Mensaje *
                     <textarea
-                        id="message"
-                        name="message"
+                        id="mensaje"
+                        name="mensaje"
                         placeholder='Escriba su mensaje aquí'
+                        rows="4"
+                        cols="50"
                         required
                     />
                 </label>
                 <ValidationError
-                    prefix="Message"
-                    field="message"
+                    prefix="Mensaje"
+                    field="mensaje"
                     errors={state.errors}
                 />
 
-                <button type="submit" disabled={state.submitting}>
-                    Enviar
+                <button type='submit' className='btn btn-primary' disabled={state.submitting}>
+                    {state.submitting ? 'Enviando...' : 'Enviar'}
                 </button>
             </form>
-        </div>
+        </>
     )
 }
 
