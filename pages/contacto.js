@@ -3,12 +3,14 @@ import TitleLight from "../components/TitleLight"
 import ContactInfo from "../components/ContactInfo"
 import ContactForm from "../components/ContactForm"
 import ScrollToTop from '../components/ScrollToTop'
+import Breadcrumb from "../components/Breadcrumb"
 
 const contacto = () => {
     const router = useRouter()
 
     return (
         <>
+            <Breadcrumb path={router.pathname} />
             <section className='container mt-5'>
                 <article className='row'>
                     <div className='col-12'>

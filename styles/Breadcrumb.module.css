@@ -1,0 +1,21 @@
+.breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0 0;
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.breadcrumb p {
+    cursor: pointer;
+    margin-bottom: 0;
+    color: var(--color-text);
+}
+
+.breadcrumb p.cleanedPath {
+    color: var(--primary-color);
+}
+

@@ -3,12 +3,14 @@ import { useRouter } from 'next/router'
 import { aboutUsImages } from '../data'
 import TitleLight from "../components/TitleLight"
 import ScrollToTop from '../components/ScrollToTop'
+import Breadcrumb from '../components/Breadcrumb'
 
 const nuestraEmpresa = () => {
     const router = useRouter()
 
     return (
         <>
+            <Breadcrumb path={router.pathname} />
             <section className='container my-5'>
                 <article className='row'>
                     <div className='col-12'>

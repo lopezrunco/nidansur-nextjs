@@ -3,12 +3,14 @@ import TitleLight from "../components/TitleLight"
 import ServicesGrid from "../components/ServicesGrid"
 import WhyUs from "../components/WhyUs"
 import ScrollToTop from '../components/ScrollToTop'
+import Breadcrumb from '../components/Breadcrumb'
 
 const servicios = () => {
     const router = useRouter()
 
     return (
         <>
+            <Breadcrumb path={router.pathname} />
             <section className='container my-5'>
                 <article className='row'>
                     <div className='col-12 text-center'>
