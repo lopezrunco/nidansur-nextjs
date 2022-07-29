@@ -33,6 +33,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#use-contact-form">Use contact form</a></li>
       </ul>
     </li>
   </ol>
@@ -80,4 +81,15 @@
     npm run dev
     ```
 
+### Use contact form
+
+1. Go to <a href='https://formspree.io/' target='_blank'>formspree.io</a> and create an account
+2. Copy the form id provided by the API
+3. Go to the project and create a file named email-code.js, paste the form id as it follows
+    ```js
+    export const EMAIL_CODE = 'your_form_id'
+    ```
+4. The messages submitted in the form will be redirected to your email
+
 <p align="right">(<a href="#top">back to top</a>)</p>
+
