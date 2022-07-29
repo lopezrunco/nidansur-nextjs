@@ -1,8 +1,12 @@
+import { useRouter } from 'next/router'
 import TitleLight from "../components/TitleLight"
 import ServicesGrid from "../components/ServicesGrid"
 import WhyUs from "../components/WhyUs"
+import ScrollToTop from '../components/ScrollToTop'
 
 const servicios = () => {
+    const router = useRouter()
+
     return (
         <>
             <section className='container my-5'>
@@ -19,6 +23,7 @@ const servicios = () => {
             <section className='pb-0'>
                 <WhyUs />
             </section>
+            <ScrollToTop scrollTo={router.pathname} />
         </>
     )
 }

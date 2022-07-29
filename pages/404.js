@@ -1,8 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from 'next/router'
+import ScrollToTop from "../components/ScrollToTop"
 import styles from "../styles/PageNotFound.module.css"
 
 const PageNotFound = () => {
+    const router = useRouter()
+
     return (
         <section className={styles.pageNotFound}>
             <article className='container my-5'>
@@ -32,6 +36,7 @@ const PageNotFound = () => {
                     </div>
                 </div>
             </article>
+            <ScrollToTop scrollTo={router.pathname} />
         </section>
     )
 }

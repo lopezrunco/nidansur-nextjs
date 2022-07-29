@@ -1,10 +1,14 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Equipment from '../components/Equipment'
 import HomeSlider from '../components/HomeSlider'
 import ServicesHome from '../components/ServicesHome'
+import ScrollToTop from '../components/ScrollToTop'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const router = useRouter()
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -20,6 +24,7 @@ export default function Home() {
           <Equipment />
         </section>
       </main>
+      <ScrollToTop scrollTo={router.pathname} />
     </div>
   )
 }

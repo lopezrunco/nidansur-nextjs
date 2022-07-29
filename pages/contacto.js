@@ -1,8 +1,12 @@
+import { useRouter } from 'next/router'
 import TitleLight from "../components/TitleLight"
 import ContactInfo from "../components/ContactInfo"
 import ContactForm from "../components/ContactForm"
+import ScrollToTop from '../components/ScrollToTop'
 
 const contacto = () => {
+    const router = useRouter()
+
     return (
         <>
             <section className='container mt-5'>
@@ -25,7 +29,7 @@ const contacto = () => {
                 </article>
             </section>
             <section className='container'>
-                <article className='row gx-5'>
+                <article className='row'>
                     <div className='col-xl-5'>
                         <div className='border p-4 mb-4'>
                             <ContactInfo />
@@ -38,6 +42,7 @@ const contacto = () => {
                     </div>
                 </article>
             </section>
+            <ScrollToTop scrollTo={router.pathname} />
         </>
     )
 }
