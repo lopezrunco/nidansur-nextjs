@@ -22,13 +22,18 @@ const ContactForm = () => {
             <ArticleTitle title='Formulario de contacto' />
             <form className={styles.contactForm} onSubmit={handleSubmit}>
                 <label htmlFor='nombre'>Nombre *
-                    <input
-                        id="nombre"
-                        type="text"
-                        name="nombre"
-                        placeholder='Escriba su nombre aquí'
-                        required
-                    />
+                    <div className={styles.inputWrapper}>
+                        <input
+                            id="nombre"
+                            type="text"
+                            name="nombre"
+                            placeholder='Escriba su nombre aquí'
+                            required
+                        />
+                        <div className={styles.labelIcon}>
+                            <i className="fa-solid fa-user"></i>
+                        </div>
+                    </div>
                 </label>
                 <ValidationError
                     prefix="Nombre"
@@ -37,13 +42,18 @@ const ContactForm = () => {
                 />
 
                 <label htmlFor='email'>Email *
-                    <input
-                        id="email"
-                        type="email"
-                        name="email"
-                        placeholder='Ej: nombre@mail.com'
-                        required
-                    />
+                    <div className={styles.inputWrapper}>
+                        <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            placeholder='Ej: nombre@mail.com'
+                            required
+                        />
+                        <div className={styles.labelIcon}>
+                            <i className="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
                 </label>
                 <ValidationError
                     prefix="Email"
@@ -52,13 +62,19 @@ const ContactForm = () => {
                 />
 
                 <label htmlFor='asunto'>Asunto *
-                    <input
-                        id="asunto"
-                        type="text"
-                        name="asunto"
-                        placeholder='Asunto del mensaje'
-                        required
-                    />
+                    <div className={styles.inputWrapper}>
+
+                        <input
+                            id="asunto"
+                            type="text"
+                            name="asunto"
+                            placeholder='Asunto del mensaje'
+                            required
+                        />
+                        <div className={styles.labelIcon}>
+                            <i className="fa-solid fa-tag"></i>
+                        </div>
+                    </div>
                 </label>
                 <ValidationError
                     prefix="Asunto"
@@ -67,14 +83,20 @@ const ContactForm = () => {
                 />
 
                 <label htmlFor='mensaje'> Mensaje *
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        placeholder='Escriba su mensaje aquí'
-                        rows="4"
-                        cols="50"
-                        required
-                    />
+                    <div className={styles.inputWrapper}>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            placeholder='Escriba su mensaje aquí'
+                            rows="4"
+                            cols="50"
+                            required
+                        />
+                        <div className={styles.labelIcon}>
+                            <i className="fa-solid fa-comment"></i>
+                        </div>
+                    </div>
                 </label>
                 <ValidationError
                     prefix="Mensaje"
