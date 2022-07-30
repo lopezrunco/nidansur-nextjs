@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 import Equipment from '../components/Equipment'
 import HomeSlider from '../components/HomeSlider'
 import ServicesHome from '../components/ServicesHome'
@@ -8,7 +9,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const router = useRouter()
-  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -18,10 +19,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <HomeSlider />
-        <ServicesHome />
+        <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0, transition: { duration: .3 } }} viewport={{ once: true }}>
+          <HomeSlider />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0, transition: { duration: .3 } }} viewport={{ once: true }}>
+          <ServicesHome />
+        </motion.div>
         <section className='container-fluid p-0'>
-          <Equipment />
+          <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0, transition: { duration: .3 } }} viewport={{ once: true }}>
+            <Equipment />
+          </motion.div>
         </section>
       </main>
       <ScrollToTop scrollTo={router.pathname} />
