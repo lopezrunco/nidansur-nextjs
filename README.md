@@ -10,7 +10,7 @@
 <h3 align="center">Nidansur Institutional website</h3>
 
   <p align="center">
-    Institutional website of Nidansur SA built using Next.js
+    Institutional website of Nidansur SA, a construction company, crafted with Next.js. With its adaptable architecture and customizable elements, this site can easily transition into a reusable template.
     <br />
     <a href="http://creativo.com.uy/"><strong>Developed by Creativo Multimedia</strong></a>
   </p>
